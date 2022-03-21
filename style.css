@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: hsl(200, 15%, 8%);
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1690px;
+    margin: 0 auto;
+}
+
+h1 {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.country-flag {
+    border-radius: 10px 10px 0 0;
+    height: 180px;
+    width: 320px;
+}
+
+.country-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 15px;
+}
+
+.country-container {
+    width: 320px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.countries-list-container {
+    max-width: 1720;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    gap: 137px;
+}
+
+.country-info-container {
+    margin-left: 15px;
+}
+
+.main-container {
+    max-width: 1690px;
+    margin: 0 auto;
+}
+
+.search {
+    width: 500px;
+    height: 50px;
+    margin: 50px 0;
+    border: none;
+    font-size: 22px;
+    border-radius: 8px;
+    padding-left: 20px;
+    outline: none;
+}
+
+.search:hover,
+.filterbtn:hover,
+.country-container:hover,
+.backbtn:hover {
+    background-color: #e6dddd;
+}
+
+.search-flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.search-result {
+    cursor: pointer;
+}
+
+.box-shadow {
+    box-shadow: 2px 2px 5px rgb(197, 197, 197);
+}
+
+#search-results {
+    width: 480px;
+    height: 400px;
+    background-color: white;
+    list-style: none;
+    position: absolute;
+    top: 160px;
+    overflow-x: scroll;
+    display: none;
+    border-radius: 10px;
+}
+
+.search-result-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+li {
+    height: 80px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.country-details {
+    display: none;
+    height: 800px;
+}
+
+.country-detail-flag {
+    width: 700px;
+    height: 500px;
+}
+
+.country-details-container {
+    display: flex;
+}
+
+.country-infos {
+    width: 600px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-left: 150px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.info-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+.normal-font-weight {
+    font-weight: normal;
+}
+
+.backbtn {
+    width: 130px;
+    height: 40px;
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.filterbtn {
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 8px;
+    height: 200px;
+}
+
+.show {
+    display: block;
+}
+
+.dpwn-li {
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .search-filter-container {
+        display: inline;
+    }
+    .countries-list-container {
+        width: 480px;
+        grid-template-columns: 320px;
+        gap: 50px;
+    }
+    .search {
+        width: 300px;
+    }
+    .country-detail-flag {
+        width: 300px;
+        height: 200px;
+    }
+    .country-details-container {
+        display: block;
+    }
+    .country-infos {
+        width: 400px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 2;
+        margin-left: 10px;
+    }
+}
